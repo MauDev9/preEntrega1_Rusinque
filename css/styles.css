@@ -1,0 +1,51 @@
+
+
+body {
+    background-image: url(../assets/pizarra.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #010101;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+div h1{
+    
+    background-color: brown;
+    border-radius: 10px;
+}
+
+div h3 ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#btn{
+    height: 60px;
+    width: 160px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px groove red;
+}
+
+#btn:hover{
+    height: 70px;
+    width: 180px;
+    font-size: 26px;;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 1s;
+}
