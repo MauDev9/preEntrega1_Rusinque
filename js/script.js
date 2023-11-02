@@ -2,15 +2,15 @@
 nota final de una lista predeterminada de alumnos de una clase y se determinará si aprueban o no.
 Donde calificaremos de 1 a 10, y promedio para aprobar será por igual o mayor a 6.*/
 
-const btn = document.getElementById("btn");
-const tocarBoton = btn.addEventListener("click", () => {
-  
+const btn1 = document.getElementById("btn1");
+const tocarBoton = btn1.addEventListener("click", () => {
+    identificarse();
 });
 
 
  //Tenemos el listado de alumnos establecido.
 
- let nombreAlumno = prompt("¡Hola!, por favor ingrese el nombre del alumno a consultar: ");
+ 
  let alumnos = ["Juan", "Ana", "Pedro", "Maria", "Martin"]; 
  
  let notaFinal = 0;
@@ -18,7 +18,7 @@ const tocarBoton = btn.addEventListener("click", () => {
 
 //Validamos la existencia del alumno en nuestra base de datos mediante una función.
 function identificarse(alumno, nombre) {
-
+    let nombreAlumno = prompt("¡Hola!, por favor ingrese el nombre del alumno a consultar: ");
     
     if (nombreAlumno !== alumnos[0] && nombreAlumno != alumnos[1] && nombreAlumno != alumnos[2] && nombreAlumno != alumnos[3] && nombreAlumno != alumnos[4] || (nombreAlumno === "" && nombreAlumno == Number))  {
         alert("El nombre del alumno ingresado no existe, verifique la informacion. ", identificarse());
@@ -26,10 +26,11 @@ function identificarse(alumno, nombre) {
     } else {
         alert("Es un gusto saludarle,  " + nombreAlumno); 
     };
+    
 
 };
 
-identificarse(); 
+
 
 function notas (){
     let nota1 = parseFloat(prompt(nombreAlumno + ", por favor ingrese su primera nota de 1 a 10: ."));
@@ -55,6 +56,7 @@ function notas (){
 
 };
 
+identificarse(); 
 notas();
 
 

@@ -30,7 +30,7 @@ div h3 ul li {
     font-size: 25px;
 }
 
-#btn{
+#btn1{
     height: 60px;
     width: 160px;
     padding: 10px;
@@ -41,7 +41,27 @@ div h3 ul li {
     border: 1px groove red;
 }
 
-#btn:hover{
+#btn1:hover{
+    height: 70px;
+    width: 180px;
+    font-size: 26px;;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+#btn2{
+    height: 60px;
+    width: 160px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px groove rgb(124, 168, 22);
+}
+
+#btn2:hover{
     height: 70px;
     width: 180px;
     font-size: 26px;;
