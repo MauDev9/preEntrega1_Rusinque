@@ -2,6 +2,11 @@
 nota final de una lista predeterminada de alumnos de una clase y se determinará si aprueban o no.
 Donde calificaremos de 1 a 10, y promedio para aprobar será por igual o mayor a 6.*/
 
+
+// Almacenar los resultados de cada alumno
+let resultados = [];
+
+
 const btn1 = document.getElementById("btn1");
 const tocarBoton = btn1.addEventListener("click", () => {
     identificarse();
@@ -16,7 +21,7 @@ function identificarse() {
 
     if (!alumnos.includes(nombreAlumno) || nombreAlumno === "" || !isNaN(parseFloat(nombreAlumno))) {
         alert("El nombre del alumno ingresado no existe o es inválido. Verifique la información.");
-        identificarse(); // Llamada recursiva para volver a pedir el nombre
+        //identificarse();  Llamada recursiva para volver a pedir el nombre
     } else {
         alert("Es un gusto saludarle,  " + nombreAlumno);
         notas(); // Llamar a la función de notas después de identificar al alumno
@@ -47,8 +52,7 @@ function notas() {
 
 // identificarse(); // Comentado para que no se ejecute automáticamente al cargar la página
 
-// Almacenar los resultados de cada alumno
-let resultados = [];
+
 
 // Llamar identificarse para cada alumno
 for (let i = 0; i < alumnos.length; i++) {
